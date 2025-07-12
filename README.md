@@ -1714,8 +1714,10 @@ for (ty i = 0; i < len(library); i++;) {
 ```
 
 ---
-## 16. How to Run
-
+## 15. How to Run
+ **[📦 Download here](https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest)** the latest version of the program.
+  For easier use, **add the executable file to your system `PATH`**:  
+   - This allows you to run the command from anywhere in your terminal.
  **Create a program**: Write your code in a `.fg` file
  **Run the program**: Use the `fg` command
 
@@ -1752,12 +1754,12 @@ fg test.fg
 
 ---
 
-## 17. Contributing
+## 16. Contributing
 This is a personal programming language project. For questions, suggestions, or support, please contact me directly.
 
 ---
 
-## 18. Language Reference (Summary Table)
+## 17. Language Reference (Summary Table)
 | Feature         | Syntax/Example                | Notes |
 |-----------------|------------------------------|-------|
 | Variable        | `ty x = 1;`                 | Mutable, block-scoped |
