@@ -1,6 +1,6 @@
 # Foolang
 
-Foolang is a modern, educational programming language inspired by C, Rust, and JavaScript. It features a tree-walking interpreter implemented in Rust, with comprehensive error handling, rich type system, and extensive standard library. Designed for learning, experimentation, and practical programming tasks.
+Foolang is a modern, experimental programming language inspired by C, Rust, and Python. It features a tree-walking interpreter implemented in Rust, with comprehensive error handling, rich type system, and extensive standard library. Designed for learning, experimentation, and practical programming tasks.
 
 ---
 
