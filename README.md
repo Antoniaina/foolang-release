@@ -1,6 +1,6 @@
-# FoutuLang
+# Foolang
 
-FoutuLang is a modern, educational programming language inspired by C, Rust, and JavaScript. It features a tree-walking interpreter implemented in Rust, with comprehensive error handling, rich type system, and extensive standard library. Designed for learning, experimentation, and practical programming tasks.
+Foolang is a modern, educational programming language inspired by C, Rust, and JavaScript. It features a tree-walking interpreter implemented in Rust, with comprehensive error handling, rich type system, and extensive standard library. Designed for learning, experimentation, and practical programming tasks.
 
 ---
 
@@ -26,7 +26,7 @@ FoutuLang is a modern, educational programming language inspired by C, Rust, and
 ---
 
 ## 1. Overview
-FoutuLang is a dynamically-typed, block-scoped, imperative language with C-like syntax and modern features. It supports:
+Foolang is a dynamically-typed, block-scoped, imperative language with C-like syntax and modern features. It supports:
 - **Rich Type System**: Integers, floats, strings, chars, arrays, structs, enums
 - **Comprehensive Operators**: Arithmetic, logical, bitwise, assignment, increment/decrement
 - **Control Structures**: If-else, while loops, for loops, break/continue
@@ -165,7 +165,7 @@ ty i = to_int(f); // 2
   Example:
   ```fg
   ty x = 42;
-  ty name = "FoutuLang";
+  ty name = "Foolang";
   ty pi = 3.14;
   ```
 
@@ -404,7 +404,7 @@ if (a > 0 && b < 10) {
 
 ### Conditional Statements
 
-FoutuLang supports classic `if`/`else` branching.
+Foolang supports classic `if`/`else` branching.
 
 **Syntax:**
 ```fg
@@ -551,7 +551,7 @@ hurle("done");
 
 ### Function Declaration
 
-Functions in FoutuLang are declared using the `function` keyword.
+Functions in foolang are declared using the `function` keyword.
 
 **Syntax:**
 ```fg
@@ -669,7 +669,7 @@ function sum_all(arr) {
     omeo total;
 }
 
-greet("FoutuLang");
+greet("foolang");
 ty numbers = [1, 2, 3, 4];
 hurle(sum_all(numbers)); // 10
 
@@ -860,7 +860,7 @@ check_status(s); // "Warning!"
 
 ## 9. Arrays
 
-Arrays in FoutuLang are dynamic and can hold values of any type, including mixed types.
+Arrays in foolang are dynamic and can hold values of any type, including mixed types.
 
 ### Declaration
 
@@ -893,7 +893,7 @@ hurle(numbers);    // [1, 10, 3, 4, 5]
 
 ### Array Operations
 
-FoutuLang provides several built-in functions for array manipulation:
+Foolang provides several built-in functions for array manipulation:
 
 | Function                | Description                        | Example                        | Result                |
 |-------------------------|------------------------------------|------------------------------- |-----------------------|
@@ -968,7 +968,7 @@ hurle(matrix[1][0]); // 3
 
 ## 10. Modules and Imports
 
-FoutuLang supports modular programming by allowing you to import code from other files using the `grab` statement.
+Foolang supports modular programming by allowing you to import code from other files using the `grab` statement.
 
 ### Importing Modules
 
@@ -1057,7 +1057,7 @@ hurle(x, y, z); // 1 2 3
 
 ## 11. Native Functions
 
-FoutuLang provides a comprehensive standard library of built-in functions for I/O, string and array manipulation, type conversion, file operations, and more.
+Foolang provides a comprehensive standard library of built-in functions for I/O, string and array manipulation, type conversion, file operations, and more.
 
 ### Input/Output
 
@@ -1139,9 +1139,9 @@ hurle(len(message)); // 13
 hurle(substring(message, 0, 5)); // "Hello"
 
 // File operations
-write_file("test.txt", "Hello from FoutuLang!");
+write_file("test.txt", "Hello from Foolang!");
 ty content = read_file("test.txt");
-hurle(content); // "Hello from FoutuLang!"
+hurle(content); // "Hello from Foolang!"
 
 // Type conversions
 ty num = 255;
@@ -1175,13 +1175,13 @@ hurle(to_oct(num)); // "0o377"
 
 ## 12. Casting and Byte Manipulation
 
-FoutuLang provides comprehensive type casting and bit manipulation capabilities for low-level programming tasks.
+Foolang provides comprehensive type casting and bit manipulation capabilities for low-level programming tasks.
 
 ### Numeric Type Casting
 
 #### Integer Type Casting
 
-FoutuLang supports casting to different integer sizes with overflow behavior similar to C/Rust:
+Foolang supports casting to different integer sizes with overflow behavior similar to C/Rust:
 
 | Function                | Description                        | Example                        | Result                |
 |-------------------------|------------------------------------|------------------------------- |-----------------------|
@@ -1232,7 +1232,7 @@ hurle(to_hex(y)); // "0x40091eb851eb851f"
 
 ### Bitwise Operations
 
-FoutuLang supports all standard bitwise operations on integers:
+Foolang supports all standard bitwise operations on integers:
 
 | Operator                | Description                        | Example                        | Result                |
 |-------------------------|------------------------------------|------------------------------- |-----------------------|
@@ -1301,7 +1301,7 @@ hurle("Float bits:", to_bin(pi));
 
 ## 13. Error Handling
 
-FoutuLang provides comprehensive error handling with precise location reporting and clear error messages to help developers debug their code effectively.
+Foolang provides comprehensive error handling with precise location reporting and clear error messages to help developers debug their code effectively.
 
 ### Error Types
 
@@ -1409,13 +1409,13 @@ Runtime error in file 'math_utils.fg' at line 5, column 10: Division by zero
 
 ## 14. Examples
 
-This section provides comprehensive examples demonstrating FoutuLang's features and capabilities.
+This section provides comprehensive examples demonstrating Foolang's features and capabilities.
 
 ### Basic Examples
 
 #### Hello World
 ```fg
-hurle("Hello, FoutuLang!");
+hurle("Hello, Foolang!");
 ```
 
 #### Variables and Arithmetic
@@ -1428,10 +1428,10 @@ hurle("Sum:", sum); // Sum: 30
 
 #### String Operations
 ```fg
-ty name = "FoutuLang";
+ty name = "Foolang";
 ty version = "1.0";
 ty message = "Welcome to " + name + " " + version;
-hurle(message); // Welcome to FoutuLang 1.0
+hurle(message); // Welcome to Foolang 1.0
 ```
 
 ---
@@ -1575,7 +1575,7 @@ if (task_status == Status::Active) {
 #### Reading and Writing Files
 ```fg
 // Write to file
-write_file("data.txt", "Hello from FoutuLang!");
+write_file("data.txt", "Hello from Foolang!");
 
 // Read from file
 ty content = read_file("data.txt");
@@ -1719,7 +1719,7 @@ for (ty i = 0; i < len(library); i++;) {
  **Create a program**: Write your code in a `.fg` file
  **Run the program**: Use the `fg` command
 
-### Running FoutuLang Programs
+### Running foolang Programs
 ```bash
 fg programme.fg
 
@@ -1727,9 +1727,9 @@ fg /path/to/programme.fg
 ```
 
 ### File Extension
-FoutuLang files use the `.fg` extension:
+Foolang files use the `.fg` extension:
 ```bash
-echo 'hurle("Hello, FoutuLang!");' > hello.fg
+echo 'hurle("Hello, Foolang!");' > hello.fg
 
 fg hello.fg
 ```
@@ -1737,7 +1737,7 @@ fg hello.fg
 
 ### Quick Start
 ```bash
-echo 'hurle("Hello, FoutuLang!");' > hello.fg
+echo 'hurle("Hello, Foolang!");' > hello.fg
 
 fg hello.fg
 
