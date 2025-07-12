@@ -321,7 +321,7 @@ const true = 1; // Error: Cannot redefine native constant 'true'
 | Operator | Description         | Example     | Result         |
 |----------|---------------------|-------------|----------------|
 | `&&`     | Logical AND         | `a && b`    | `true`/`false` |
-| `||`     | Logical OR          | `a || b`    | `true`/`false` |
+| `\|\|`   | Logical OR          | `a \|\| b`  | `true`/`false` |
 | `!`      | Logical NOT         | `!a`        | boolean negation |
 
 - **Short-circuit**: `&&` and `||` do not evaluate the right-hand side if the result is already determined.
@@ -331,7 +331,7 @@ const true = 1; // Error: Cannot redefine native constant 'true'
 | Operator | Description         | Example     | Result   |
 |----------|---------------------|-------------|----------|
 | `&`      | Bitwise AND         | `5 & 3`     | `1`      |
-| `|`      | Bitwise OR          | `5 | 2`     | `7`      |
+| `\|`     | Bitwise OR          | `5 \| 2`    | `7`      |
 | `^`      | Bitwise XOR         | `5 ^ 1`     | `4`      |
 | `~`      | Bitwise NOT         | `~2`        | `-3`     |
 | `<<`     | Left shift          | `1 << 2`    | `4`      |
@@ -1237,7 +1237,7 @@ Foolang supports all standard bitwise operations on integers:
 | Operator                | Description                        | Example                        | Result                |
 |-------------------------|------------------------------------|------------------------------- |-----------------------|
 | `&`                     | Bitwise AND                         | `5 & 3`                        | `1`                   |
-| `|`                     | Bitwise OR                          | `5 | 2`                        | `7`                   |
+| `\|`                     | Bitwise OR                          | `5 \| 2`                        | `7`                   |
 | `^`                     | Bitwise XOR                         | `5 ^ 1`                        | `4`                   |
 | `~`                     | Bitwise NOT                         | `~2`                           | `-3`                  |
 | `<<`                    | Left shift                          | `1 << 2`                       | `4`                   |
