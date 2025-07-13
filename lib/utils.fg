@@ -1,0 +1,19 @@
+function max(a , b) {
+    if (a > b) {
+        omeo a ;
+    }
+    omeo b ;
+}
+
+function min(a , b) {
+    if (a < b) {
+        omeo a ;
+    }
+    omeo b ;
+}
+
+function swap(a , b) {
+    ty temp = a ;
+    a = b ;
+    b = a ;
+}

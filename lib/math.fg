@@ -1,0 +1,304 @@
+/*
+ * ============================================================================
+ * Foolang Math Library (math.fg)
+ * ============================================================================
+ * 
+ * This library provides comprehensive mathematical functions for Foolang.
+ * Include this file in your program using: grab "lib/math.fg";
+ * 
+ * Functions included:
+ * - Advanced math: pow, factorial, abs, sqrt, log, exp
+ * - Comparison: max, min, clamp
+ * - Trigonometry: sin, cos, tan, asin, acos, atan
+ * - Statistics: sum, average, gcd, lcm
+ * - Constants: PI, E, PHI
+ * 
+ * Author: Antoniaina RAMAHALISON ARISEHENO (@Antoniaina)
+ * Version: 1.0
+ * License: MIT
+ * ============================================================================
+ */
+
+// Mathematical constants
+const PI = 3.14159265359;
+const E = 2.71828182846;
+const PHI = 1.61803398875;
+
+// Power function (a^b)
+function pow(a, b) {
+    ty result = 1;
+    ty i = 0;
+    while (i < b) {
+        result = result * a;
+        i++;
+    }
+    omeo result;
+}
+
+// Square root approximation using Newton's method
+function sqrt(x) {
+    if (x < 0) {
+        hurle("Error: Cannot compute square root of negative number");
+        omeo NULL;
+    }
+    if (x == 0) {
+        omeo 0;
+    }
+    
+    ty guess = x / 2;
+    ty i = 0;
+    while (i < 10) {
+        guess = (guess + x / guess) / 2;
+        i++;
+    }
+    omeo guess;
+}
+
+// Factorial function
+function factorial(n) {
+    if (n <= 1) {
+        omeo 1;
+    }
+    omeo n * factorial(n - 1);
+}
+
+// Absolute value
+function abs(x) {
+    if (x < 0) {
+        omeo -x;
+    }
+    omeo x;
+}
+
+// Maximum of two values
+function max(a, b) {
+    if (a > b) {
+        omeo a;
+    }
+    omeo b;
+}
+
+// Minimum of two values
+function min(a, b) {
+    if (a < b) {
+        omeo a;
+    }
+    omeo b;
+}
+
+// Clamp value between min and max
+function clamp(value, min_val, max_val) {
+    if (value < min_val) {
+        omeo min_val;
+    }
+    if (value > max_val) {
+        omeo max_val;
+    }
+    omeo value;
+}
+
+// Natural logarithm approximation
+function log(x) {
+    if (x <= 0) {
+        hurle("Error: Cannot compute logarithm of non-positive number");
+        omeo NULL;
+    }
+    
+    ty result = 0;
+    ty y = (x - 1) / (x + 1);
+    ty i = 1;
+    while (i <= 100) {
+        result = result + pow(y, 2 * i - 1) / (2 * i - 1);
+        i++;
+    }
+    omeo 2 * result;
+}
+
+// Exponential function approximation
+function exp(x) {
+    ty result = 1;
+    ty term = 1;
+    ty i = 1;
+    while (i <= 20) {
+        term = term * x / i;
+        result = result + term;
+        i++;
+    }
+    omeo result;
+}
+
+// Sine function (approximation using Taylor series)
+function sin(x) {
+    ty result = 0;
+    ty term = x;
+    ty i = 1;
+    while (i <= 10) {
+        result = result + term;
+        term = -term * x * x / ((2 * i) * (2 * i + 1));
+        i++;
+    }
+    omeo result;
+}
+
+// Cosine function (approximation using Taylor series)
+function cos(x) {
+    ty result = 1;
+    ty term = 1;
+    ty i = 1;
+    while (i <= 10) {
+        term = -term * x * x / ((2 * i - 1) * (2 * i));
+        result = result + term;
+        i++;
+    }
+    omeo result;
+}
+
+// Tangent function
+function tan(x) {
+    omeo sin(x) / cos(x);
+}
+
+// Arc sine (approximation)
+function asin(x) {
+    if (x < -1 || x > 1) {
+        hurle("Error: asin domain is [-1, 1]");
+        omeo NULL;
+    }
+    omeo atan(x / sqrt(1 - x * x));
+}
+
+// Arc cosine (approximation)
+function acos(x) {
+    if (x < -1 || x > 1) {
+        hurle("Error: acos domain is [-1, 1]");
+        omeo NULL;
+    }
+    omeo PI / 2 - asin(x);
+}
+
+// Arc tangent (approximation)
+function atan(x) {
+    ty result = 0;
+    ty term = x;
+    ty i = 1;
+    while (i <= 20) {
+        result = result + term / (2 * i - 1);
+        term = -term * x * x;
+        i++;
+    }
+    omeo result;
+}
+
+// Greatest Common Divisor
+function gcd(a, b) {
+    ty temp_a = abs(a);
+    ty temp_b = abs(b);
+    while (temp_b != 0) {
+        ty temp = temp_b;
+        temp_b = temp_a % temp_b;
+        temp_a = temp;
+    }
+    omeo temp_a;
+}
+
+// Least Common Multiple
+function lcm(a, b) {
+    omeo abs(a * b) / gcd(a, b);
+}
+
+// Sum of array elements
+function sum(arr) {
+    ty total = 0;
+    ty i = 0;
+    while (i < len(arr)) {
+        total = total + arr[i];
+        i++;
+    }
+    omeo total;
+}
+
+// Average of array elements
+function average(arr) {
+    omeo sum(arr) / len(arr);
+}
+
+// Round to nearest integer
+function round(x) {
+    if (x >= 0) {
+        omeo x + 0.5;
+    }
+    omeo x - 0.5;
+}
+
+// Floor function
+function floor(x) {
+    ty int_part = x;
+    if (x < 0 && x != int_part) {
+        omeo int_part - 1;
+    }
+    omeo int_part;
+}
+
+// Ceiling function
+function ceil(x) {
+    ty int_part = x;
+    if (x > 0 && x != int_part) {
+        omeo int_part + 1;
+    }
+    omeo int_part;
+}
+
+// Modulo operation (handles negative numbers correctly)
+function mod(a, b) {
+    if (b == 0) {
+        hurle("Error: Modulo by zero");
+        omeo NULL;
+    }
+    omeo a - b * floor(a / b);
+}
+
+// Check if number is even
+function is_even(n) {
+    omeo mod(n, 2) == 0;
+}
+
+// Check if number is odd
+function is_odd(n) {
+    omeo mod(n, 2) == 1;
+}
+
+// Check if number is prime
+function is_prime(n) {
+    if (n < 2) {
+        omeo false;
+    }
+    if (n == 2) {
+        omeo true;
+    }
+    if (is_even(n)) {
+        omeo false;
+    }
+    
+    ty i = 3;
+    while (i * i <= n) {
+        if (mod(n, i) == 0) {
+            omeo false;
+        }
+        i = i + 2;
+    }
+    omeo true;
+}
+
+// Generate random number between min and max (pseudo-random)
+function random(min_val, max_val) {
+    ty seed = 12345; 
+    // Note: This is a fixed seed used for demonstration and testing purposes.
+    // In real applications, consider using a dynamic seed (e.g., based on time)
+    // to ensure better randomness across program runs.
+    ty a = 1664525;
+    ty c = 1013904223;
+    ty m = 2147483648;
+    
+    seed = mod(a * seed + c, m);
+    omeo min_val + mod(seed, max_val - min_val + 1);
+} 

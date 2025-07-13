@@ -21,7 +21,8 @@ Foolang is a modern, experimental programming language inspired by C, Rust, and 
 14. [Examples](#14-examples)
 15. [How to Run](#15-how-to-run)
 16. [Contributing](#16-contributing)
-17. [Language Reference](#17-language-reference-summary-table)
+17. [Licence](#17-license)
+18. [Language Reference](#18-language-reference-summary-table)
 
 ---
 
@@ -1759,7 +1760,14 @@ This is a personal programming language project. For questions, suggestions, or 
 
 ---
 
-## 17. Language Reference (Summary Table)
+## 17. License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2025 Antoniaina RAMAHALISON ARISEHENO
+
+---
+
+## 18. Language Reference (Summary Table)
 | Feature         | Syntax/Example                | Notes |
 |-----------------|------------------------------|-------|
 | Variable        | `ty x = 1;`                 | Mutable, block-scoped |
