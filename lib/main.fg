@@ -1,9 +1,0 @@
-grab "math.fg" ;
-grab "utils.fg" ;
-
-ty a = 1 ;
-ty b = 2 ;
-
-swap(a , b) ;
-
-hurle(a , b) ;
