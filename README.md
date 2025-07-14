@@ -1,6 +1,6 @@
-# Foolang
+# Flinglang
 
-Foolang is a modern, experimental programming language inspired by C, Rust, and Python. It features a tree-walking interpreter implemented in Rust, with comprehensive error handling, rich type system, and extensive standard library. Designed for learning, experimentation, and practical programming tasks.
+Flinglang is a modern, experimental programming language inspired by C, Rust, and Python. It features a tree-walking interpreter implemented in Rust, with comprehensive error handling, rich type system, and extensive standard library. Designed for learning, experimentation, and practical programming tasks.
 
 ---
 
@@ -27,7 +27,7 @@ Foolang is a modern, experimental programming language inspired by C, Rust, and 
 ---
 
 ## 1. Overview
-Foolang is a dynamically-typed, block-scoped, imperative language with C-like syntax and modern features. It supports:
+Flinglang is a dynamically-typed, block-scoped, imperative language with C-like syntax and modern features. It supports:
 - **Rich Type System**: Integers, floats, strings, chars, arrays, structs, enums
 - **Comprehensive Operators**: Arithmetic, logical, bitwise, assignment, increment/decrement
 - **Control Structures**: If-else, while loops, for loops, break/continue
@@ -166,7 +166,7 @@ ty i = to_int(f); // 2
   Example:
   ```fg
   ty x = 42;
-  ty name = "Foolang";
+  ty name = "Flinglang";
   ty pi = 3.14;
   ```
 
@@ -405,7 +405,7 @@ if (a > 0 && b < 10) {
 
 ### Conditional Statements
 
-Foolang supports classic `if`/`else` branching.
+Flinglang supports classic `if`/`else` branching.
 
 **Syntax:**
 ```fg
@@ -552,7 +552,7 @@ hurle("done");
 
 ### Function Declaration
 
-Functions in foolang are declared using the `function` keyword.
+Functions in Flinglang are declared using the `function` keyword.
 
 **Syntax:**
 ```fg
@@ -670,7 +670,7 @@ function sum_all(arr) {
     omeo total;
 }
 
-greet("foolang");
+greet("Flinglang");
 ty numbers = [1, 2, 3, 4];
 hurle(sum_all(numbers)); // 10
 
@@ -861,7 +861,7 @@ check_status(s); // "Warning!"
 
 ## 9. Arrays
 
-Arrays in foolang are dynamic and can hold values of any type, including mixed types.
+Arrays in Flinglang are dynamic and can hold values of any type, including mixed types.
 
 ### Declaration
 
@@ -894,7 +894,7 @@ hurle(numbers);    // [1, 10, 3, 4, 5]
 
 ### Array Operations
 
-Foolang provides several built-in functions for array manipulation:
+Flinglang provides several built-in functions for array manipulation:
 
 | Function                | Description                        | Example                        | Result                |
 |-------------------------|------------------------------------|------------------------------- |-----------------------|
@@ -969,7 +969,7 @@ hurle(matrix[1][0]); // 3
 
 ## 10. Modules and Imports
 
-Foolang supports modular programming by allowing you to import code from other files using the `grab` statement.
+Flinglang supports modular programming by allowing you to import code from other files using the `grab` statement.
 
 ### Importing Modules
 
@@ -1058,7 +1058,7 @@ hurle(x, y, z); // 1 2 3
 
 ## 11. Native Functions
 
-Foolang provides a comprehensive standard library of built-in functions for I/O, string and array manipulation, type conversion, file operations, and more.
+Flinglang provides a comprehensive standard library of built-in functions for I/O, string and array manipulation, type conversion, file operations, and more.
 
 ### Input/Output
 
@@ -1140,9 +1140,9 @@ hurle(len(message)); // 13
 hurle(substring(message, 0, 5)); // "Hello"
 
 // File operations
-write_file("test.txt", "Hello from Foolang!");
+write_file("test.txt", "Hello from Flinglang!");
 ty content = read_file("test.txt");
-hurle(content); // "Hello from Foolang!"
+hurle(content); // "Hello from Flinglang!"
 
 // Type conversions
 ty num = 255;
@@ -1176,13 +1176,13 @@ hurle(to_oct(num)); // "0o377"
 
 ## 12. Casting and Byte Manipulation
 
-Foolang provides comprehensive type casting and bit manipulation capabilities for low-level programming tasks.
+Flinglang provides comprehensive type casting and bit manipulation capabilities for low-level programming tasks.
 
 ### Numeric Type Casting
 
 #### Integer Type Casting
 
-Foolang supports casting to different integer sizes with overflow behavior similar to C/Rust:
+Flinglang supports casting to different integer sizes with overflow behavior similar to C/Rust:
 
 | Function                | Description                        | Example                        | Result                |
 |-------------------------|------------------------------------|------------------------------- |-----------------------|
@@ -1233,7 +1233,7 @@ hurle(to_hex(y)); // "0x40091eb851eb851f"
 
 ### Bitwise Operations
 
-Foolang supports all standard bitwise operations on integers:
+Flinglang supports all standard bitwise operations on integers:
 
 | Operator                | Description                        | Example                        | Result                |
 |-------------------------|------------------------------------|------------------------------- |-----------------------|
@@ -1302,7 +1302,7 @@ hurle("Float bits:", to_bin(pi));
 
 ## 13. Error Handling
 
-Foolang provides comprehensive error handling with precise location reporting and clear error messages to help developers debug their code effectively.
+Flinglang provides comprehensive error handling with precise location reporting and clear error messages to help developers debug their code effectively.
 
 ### Error Types
 
@@ -1410,13 +1410,13 @@ Runtime error in file 'math_utils.fg' at line 5, column 10: Division by zero
 
 ## 14. Examples
 
-This section provides comprehensive examples demonstrating Foolang's features and capabilities.
+This section provides comprehensive examples demonstrating Flinglang's features and capabilities.
 
 ### Basic Examples
 
 #### Hello World
 ```fg
-hurle("Hello, Foolang!");
+hurle("Hello, Flinglang!");
 ```
 
 #### Variables and Arithmetic
@@ -1429,10 +1429,10 @@ hurle("Sum:", sum); // Sum: 30
 
 #### String Operations
 ```fg
-ty name = "Foolang";
+ty name = "Flinglang";
 ty version = "1.0";
 ty message = "Welcome to " + name + " " + version;
-hurle(message); // Welcome to Foolang 1.0
+hurle(message); // Welcome to Flinglang 1.0
 ```
 
 ---
@@ -1576,7 +1576,7 @@ if (task_status == Status::Active) {
 #### Reading and Writing Files
 ```fg
 // Write to file
-write_file("data.txt", "Hello from Foolang!");
+write_file("data.txt", "Hello from Flinglang!");
 
 // Read from file
 ty content = read_file("data.txt");
@@ -1722,7 +1722,7 @@ for (ty i = 0; i < len(library); i++;) {
  **Create a program**: Write your code in a `.fg` file
  **Run the program**: Use the `fg` command
 
-### Running foolang Programs
+### Running Flinglang Programs
 ```bash
 fg programme.fg
 
@@ -1730,9 +1730,9 @@ fg /path/to/programme.fg
 ```
 
 ### File Extension
-Foolang files use the `.fg` extension:
+Flinglang files use the `.fg` extension:
 ```bash
-echo 'hurle("Hello, Foolang!");' > hello.fg
+echo 'hurle("Hello, Flinglang!");' > hello.fg
 
 fg hello.fg
 ```
@@ -1740,7 +1740,7 @@ fg hello.fg
 
 ### Quick Start
 ```bash
-echo 'hurle("Hello, Foolang!");' > hello.fg
+echo 'hurle("Hello, Flinglang!");' > hello.fg
 
 fg hello.fg
 

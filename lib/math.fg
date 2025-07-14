@@ -1,9 +1,9 @@
 /*
  * ============================================================================
- * Foolang Math Library (math.fg)
+ * Flinglang Math Library (math.fg)
  * ============================================================================
  * 
- * This library provides comprehensive mathematical functions for Foolang.
+ * This library provides comprehensive mathematical functions for Flinglang.
  * Include this file in your program using: grab "lib/math.fg";
  * 
  * Functions included:
