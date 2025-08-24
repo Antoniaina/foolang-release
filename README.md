@@ -1,6 +1,6 @@
 # Flinglang
 
-Flinglang is a modern, experimental programming language inspired by C, Rust, and Python. It features a tree-walking interpreter implemented in Rust, with comprehensive error handling, rich type system, and extensive standard library. Designed for learning, experimentation, and practical programming tasks.
+Flinglang is a modern, experimental programming language inspired by C, Rust, and Python, written in Rust. It features a tree-walking interpreter implemented in Rust, with comprehensive error handling, rich type system, and extensive standard library. Designed for learning, experimentation, and practical programming tasks.
 
 ---
 
